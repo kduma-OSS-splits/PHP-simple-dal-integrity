@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace KDuma\SimpleDAL\DataIntegrity;
+namespace KDuma\SimpleDAL\Integrity;
 
 use KDuma\SimpleDAL\Adapter\Contracts\StorageAdapterInterface;
 use KDuma\SimpleDAL\Contracts\EntityDefinitionInterface;
-use KDuma\SimpleDAL\DataIntegrity\Exception\IntegrityException;
+use KDuma\SimpleDAL\Integrity\Exception\IntegrityException;
 
 class IntegrityStorageAdapter implements StorageAdapterInterface
 {

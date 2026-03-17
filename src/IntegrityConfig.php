@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace KDuma\SimpleDAL\DataIntegrity;
+namespace KDuma\SimpleDAL\Integrity;
 
-use KDuma\SimpleDAL\DataIntegrity\Contracts\HashingAlgorithmInterface;
-use KDuma\SimpleDAL\DataIntegrity\Contracts\SigningAlgorithmInterface;
+use KDuma\SimpleDAL\Integrity\Contracts\HashingAlgorithmInterface;
+use KDuma\SimpleDAL\Integrity\Contracts\SigningAlgorithmInterface;
 
 class IntegrityConfig
 {

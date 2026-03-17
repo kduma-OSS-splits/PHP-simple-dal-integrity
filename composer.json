@@ -1,6 +1,6 @@
 {
-    "name": "kduma/simple-dal-data-integrity",
-    "description": "Simple DAL - Data integrity checksums and signatures plugin",
+    "name": "kduma/simple-dal-integrity",
+    "description": "Simple DAL - Integrity checksums and signatures plugin",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -17,7 +17,7 @@
     "require": {
         "php": "^8.4",
         "kduma/binary-tools": "^0.0.4",
-        "kduma/simple-dal-data-integrity-contracts": "^0.1",
+        "kduma/simple-dal-integrity-contracts": "^0.1",
         "kduma/simple-dal-adapter-contracts": "^0.1",
         "kduma/simple-dal-contracts": "^0.1"
     },
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "KDuma\\SimpleDAL\\DataIntegrity\\": "src/"
+            "KDuma\\SimpleDAL\\Integrity\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KDuma\\SimpleDAL\\DataIntegrity\\Tests\\": "tests/"
+            "KDuma\\SimpleDAL\\Integrity\\Tests\\": "tests/"
         }
     },
     "extra": {

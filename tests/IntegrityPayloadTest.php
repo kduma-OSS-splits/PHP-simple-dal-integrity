@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use KDuma\SimpleDAL\Contracts\Exception\CorruptedDataException;
-use KDuma\SimpleDAL\DataIntegrity\IntegrityPayload;
+use KDuma\SimpleDAL\Integrity\IntegrityPayload;
 
 test('encode and decode round-trip with hash only', function () {
     $hash = hash('sha256', 'test content', binary: true);

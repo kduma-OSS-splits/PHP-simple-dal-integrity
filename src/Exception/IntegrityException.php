@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace KDuma\SimpleDAL\DataIntegrity\Exception;
+namespace KDuma\SimpleDAL\Integrity\Exception;
 
 use KDuma\SimpleDAL\Contracts\Exception\CorruptedDataException;
 

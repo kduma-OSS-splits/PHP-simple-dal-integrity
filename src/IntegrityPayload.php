@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace KDuma\SimpleDAL\DataIntegrity;
+namespace KDuma\SimpleDAL\Integrity;
 
 use KDuma\BinaryTools\BinaryReader;
 use KDuma\BinaryTools\BinaryString;
@@ -46,7 +46,7 @@ class IntegrityPayload
         $hasSig = $signingAlgorithm !== null && $keyId !== null && $signature !== null;
         $flags = ($hasHash ? 0x01 : 0x00) | ($hasSig ? 0x02 : 0x00);
 
-        $writer = new BinaryWriter();
+        $writer = new BinaryWriter;
         $writer->writeBytes(BinaryString::fromString(self::MAGIC))
             ->writeByte(self::VERSION)
             ->writeByte($flags);

@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 use KDuma\SimpleDAL\Adapter\Database\DatabaseAdapter;
-use KDuma\SimpleDAL\DataIntegrity\Contracts\HashingAlgorithmInterface;
-use KDuma\SimpleDAL\DataIntegrity\Contracts\SigningAlgorithmInterface;
+use KDuma\SimpleDAL\Integrity\Contracts\HashingAlgorithmInterface;
+use KDuma\SimpleDAL\Integrity\Contracts\SigningAlgorithmInterface;
 use PHPUnit\Framework\TestCase;
 
-abstract class DataIntegrityTestCase extends TestCase
+abstract class IntegrityTestCase extends TestCase
 {
     public PDO $pdo;
 
@@ -22,4 +22,4 @@ abstract class DataIntegrityTestCase extends TestCase
     public SigningAlgorithmInterface $signerB;
 }
 
-uses(DataIntegrityTestCase::class)->in(__DIR__);
+uses(IntegrityTestCase::class)->in(__DIR__);

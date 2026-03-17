@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 use KDuma\SimpleDAL\Adapter\Database\DatabaseAdapter;
 use KDuma\SimpleDAL\Contracts\EntityDefinitionInterface;
-use KDuma\SimpleDAL\DataIntegrity\Contracts\HashingAlgorithmInterface;
-use KDuma\SimpleDAL\DataIntegrity\Contracts\SigningAlgorithmInterface;
-use KDuma\SimpleDAL\DataIntegrity\IntegrityConfig;
-use KDuma\SimpleDAL\DataIntegrity\IntegrityMigrator;
-use KDuma\SimpleDAL\DataIntegrity\IntegrityPayload;
-use KDuma\SimpleDAL\DataIntegrity\IntegrityStorageAdapter;
+use KDuma\SimpleDAL\Integrity\Contracts\HashingAlgorithmInterface;
+use KDuma\SimpleDAL\Integrity\Contracts\SigningAlgorithmInterface;
+use KDuma\SimpleDAL\Integrity\IntegrityConfig;
+use KDuma\SimpleDAL\Integrity\IntegrityMigrator;
+use KDuma\SimpleDAL\Integrity\IntegrityPayload;
+use KDuma\SimpleDAL\Integrity\IntegrityStorageAdapter;
 
 beforeEach(function () {
     $this->pdo = new PDO('sqlite::memory:');
